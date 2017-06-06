@@ -8,6 +8,7 @@ continuing...
 Bottom Sheet
 -----------
 ![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/components-bottomsheets-content-actionsheet_08_large_mdpi.png)
+
 Material Bottom Sheet Design GuideLine
 
 Screen Shot
