@@ -1,15 +1,21 @@
 package com.zterry.materialbottomsheet;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import com.zterry.library.BottomSheetDialogHelper;
+import com.zterry.library.BottomSheetMenuItem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements BottomSheetDialogHelper.OnMenuItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +28,19 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+                showBottomSheetDialog();
             }
         });
     }
+
+    private void showBottomSheetDialog() {
+        BottomSheetDialogHelper dialogHelper = new BottomSheetDialogHelper(this);
+        dialogHelper.setData(SampleData.getData());
+        dialogHelper.setOnMenuItemClickListener(this);
+        dialogHelper.show();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,5 +62,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onMenuItemClick(View view, BottomSheetMenuItem item) {
+
     }
 }

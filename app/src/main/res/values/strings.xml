@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MaterialBottomSheet</string>
     <string name="action_settings">Settings</string>
+    <string name="bottom_sheet_item_title_backup">backup</string>
+    <string name="bottom_sheet_item_title_build">build</string>
+    <string name="bottom_sheet_item_title_history">history</string>
+    <string name="bottom_sheet_item_title_loyalty">loyalty</string>
 </resources>
