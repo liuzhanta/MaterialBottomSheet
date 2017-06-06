@@ -1,19 +1,16 @@
 package com.zterry.materialbottomsheet;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.zterry.library.BottomSheetDialogHelper;
 import com.zterry.library.BottomSheetMenuItem;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements BottomSheetDialogHelper.OnMenuItemClickListener {
 
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements BottomSheetDialog
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements BottomSheetDialog
 
     private void showBottomSheetDialog() {
         BottomSheetDialogHelper dialogHelper = new BottomSheetDialogHelper(this);
-        dialogHelper.setData(SampleData.getData());
         dialogHelper.setOnMenuItemClickListener(this);
+        dialogHelper.setData(SampleData.getData());
         dialogHelper.show();
     }
 
@@ -66,6 +63,6 @@ public class MainActivity extends AppCompatActivity implements BottomSheetDialog
 
     @Override
     public void onMenuItemClick(View view, BottomSheetMenuItem item) {
-
+        Toast.makeText(this, "item " + getString(item.titleId) + " has been clicked", Toast.LENGTH_SHORT).show();
     }
 }
