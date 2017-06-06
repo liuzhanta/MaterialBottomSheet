@@ -5,9 +5,14 @@ Getting started
 ---------------
 continuing...
 
+Bottom Sheet
+-----------
+![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/components-bottomsheets-content-actionsheet_08_large_mdpi.png)
+Material Bottom Sheet Design GuideLine
+
 Screen Shot
 -----------
-![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/Screenshot.png) ![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/components-bottomsheets-content-actionsheet_08_large_mdpi.png)
+![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/Screenshot.png) 
 
 Usage Xml
 ---------
