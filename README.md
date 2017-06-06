@@ -19,10 +19,10 @@ Usage Xml
 ---------
 You can use like the code following this:
 
-            BottomSheetDialogHelper dialogHelper = new BottomSheetDialogHelper(this);
-            dialogHelper.setData(SampleData.getData());
-            dialogHelper.setOnMenuItemClickListener(this);
-            dialogHelper.show();
+    BottomSheetDialogHelper dialogHelper = new BottomSheetDialogHelper(this);
+    dialogHelper.setData(SampleData.getData());
+    dialogHelper.setOnMenuItemClickListener(this);
+    dialogHelper.show();
     
 Developed by
 ------------
