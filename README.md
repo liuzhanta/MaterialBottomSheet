@@ -7,6 +7,7 @@ continuing...
 
 Screen Shot
 -----------
+![](https://github.com/liuzhanta/MaterialBottomSheet/blob/master/Screenshot.png)
 
 Usage Xml
 ---------
